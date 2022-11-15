@@ -9,7 +9,7 @@ const HomePage: React.FC<{}> = ({}) => {
       <div className="container">
         <div className="navbar">
           <h1>Home Page</h1>
-          <div className="logo-container">
+          <div className="logo-container-home">
             <img height={"100%"} width={"100%"} src={logo} />
           </div>
         </div>
