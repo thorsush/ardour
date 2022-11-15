@@ -1,14 +1,18 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import "./App.css";
+import { useEffect, useState } from "react";
+import HomePage from "./app/HomePage";
+import LogoComponent from "./logo-container/LogoCompoent";
 
 function App() {
-  const [count, setCount] = useState(0);
-
-  return (
-    <div className="App">
-      <h1>Ardour logo</h1>
-    </div>
+  const [logoPrompt, setLogoPromt] = useState<boolean>(true);
+  useEffect(() => {
+    setTimeout(() => setLogoPromt(false), 8000);
+  }, []);
+  return logoPrompt ? (
+    <LogoComponent />
+  ) : (
+    <>
+      <HomePage />
+    </>
   );
 }
 

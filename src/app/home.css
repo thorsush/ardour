@@ -1,0 +1,26 @@
+.navbar {
+    position: fixed;
+    height: 100vh;
+    width: 26vw;
+   
+}
+.logo-container{
+border-radius: 10px;
+border: 1px solid rgb(234, 171, 171) ;
+position: relative;
+top: 72%;
+left: 5%;
+height: 120px;
+width: 220px;
+
+}
+.container{
+    display: flex;
+}
+.scroll-div{
+    position: relative;
+    left: 26%;
+    width: 74vw;
+    height: fit-content;
+    
+}
