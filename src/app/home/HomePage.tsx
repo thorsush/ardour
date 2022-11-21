@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import LogoComponent from "../../logo-container/LogoCompoent";
 import MainLayout from "../layout/main.layout";
 import {
@@ -13,10 +13,10 @@ import {
 
 const HomePage: React.FC<{}> = ({}) => {
   const [logoPrompt, setLogoPromt] = useState<boolean>(true);
-  // useEffect(() => {
-  //   setTimeout(() => setLogoPromt(false), 8000);
-  // }, []);
-  return !logoPrompt ? (
+  useEffect(() => {
+    setTimeout(() => setLogoPromt(false), 8000);
+  }, []);
+  return logoPrompt ? (
     <LogoComponent />
   ) : (
     <>
