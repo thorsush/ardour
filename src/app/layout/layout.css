@@ -1,0 +1,27 @@
+.sidebar{
+position: fixed;
+display: flex;
+flex-direction: column;
+height: 100vh;
+align-items: center;
+z-index: 100;
+
+}
+.logo-container-1 {
+    font-family: 'Russo One', Heather Thomas-light;
+    font-size: 30px;
+    background: transparent;
+  }
+  .nav-logo{
+    margin-top: 57vh;
+  }
+  .child-div{
+    overflow: hidden;
+    position: absolute;
+    width: 100vw;
+    left: 0;
+    z-index: -20;
+  }
+  .layout{
+    margin-top: -8px;
+  }

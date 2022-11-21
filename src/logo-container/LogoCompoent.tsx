@@ -17,7 +17,7 @@ const LogoComponent: React.FC<{}> = ({}) => {
           </svg>
         </div>
         {logoDone && (
-          <div className="secon-container geeks">
+          <div className="fade-in-text">
             <h1>ARDOUR </h1>
             <h1 className="ha" style={{ fontWeight: "lighter", font: "rouna" }}>
               DESIGN STUDIO

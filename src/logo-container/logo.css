@@ -30,37 +30,48 @@
       stroke-dashoffset: -25%; stroke-dasharray: 50% 0; stroke-width: 0;
     }
   }
-  .geeks {
-    background: #ffffff;
-    position:absolute ;
-    top: 60%;
-    left: 16%;
-    font-family:  sans-serif;
-    border-bottom: 5px solid rgb(0, 0, 0);
-    overflow: auto;
-    animation: animate 3s linear forwards;
-}
+  
 
 .geeks .h1 {
     color: rgb(0, 0, 0);
 }
 
-@keyframes animate {
-    0% {
-        width: 0px;
-        height: 0px;
-    }
-    30% {
-        width: 150px;
-        height: 0px;
-    }
-    60% {
-        width: 150px;
-        height: 150px;
-    }
-    60% {
-      width: 260px;
-      height: 140px;
-  }
+
+.fade-in-text {
+ 
+  position:absolute ;
+  top: 60%;
+  left: 16%;
+  font-family: Arial;
+  animation: fadeIn 5s;
+  -webkit-animation: fadeIn 6s;
+  -moz-animation: fadeIn 6s;
+  -o-animation: fadeIn 6s;
+  -ms-animation: fadeIn 6s;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-moz-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-webkit-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-o-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-ms-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
 }
   
